@@ -34,7 +34,7 @@ app.get("/api/:date?", (req, res)=>{
   }
 
   if (parsedDate.toString() === "Invalid Date") {
-    return res.json({error: "Yaha koi Date vagera nahi hai"})
+    return res.json({error: "Invalid Date"})
   }
 
   return res.json({
